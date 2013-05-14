@@ -1,0 +1,6 @@
+selectp -t 0 # select the first (0) pane
+splitw -v -p 25 # split it into two halves, and run vim
+ 
+ selectp -t 0 # select the new, second (1) pane
+ splitw -h -p 35 # split it into two halves
+ selectp -t 0
