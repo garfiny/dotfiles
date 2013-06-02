@@ -41,3 +41,6 @@
 .NERDTreeBookmarks
 .Trash
 .bash_history
+.cabal/
+.ghc/
+dbext_sql_history.txt
