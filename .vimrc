@@ -92,6 +92,9 @@ set rtp+=~/.vim/bundle/vundle/
  runtime! ftplugin/man.vim
  au FileType ruby setl sw=2 sts=2 et
 
+ au FileType xml exe ":silent 1,$!xmllint --format --recover - 2>/dev/null"
+ au FileType xsd exe ":silent 1,$!xmllint --format --recover - 2>/dev/null"
+
  """"""""""""""""""""""""""""""""""""""""""""""""""""""""""
  " Basic Settings
  """"""""""""""""""""""""""""""""""""""""""""""""""""""""""
