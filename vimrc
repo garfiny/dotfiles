@@ -52,6 +52,8 @@ set rtp+=~/.vim/bundle/vundle/
  Bundle 'slim-template/vim-slim.git'
  Bundle 'vinhtiensinh/clipboard_file_open.git'
  Bundle 'vim-scripts/dbext.vim.git'
+ Bundle 'vim-scripts/Superior-Haskell-Interaction-Mode-SHIM.git'
+ Bundle 'elzr/vim-json.git'
 
  filetype plugin indent on     " required!
  "
@@ -74,7 +76,7 @@ set rtp+=~/.vim/bundle/vundle/
  set t_Co=256
  set background=dark
  call togglebg#map("<F5>")
- colorscheme Wombat256
+ colorscheme wombat256
 
  " MRU
  let MRU_Exclude_Files = '^/tmp/.*\|^/var/tmp/.*'
