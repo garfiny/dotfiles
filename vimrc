@@ -54,8 +54,15 @@ set rtp+=~/.vim/bundle/vundle/
  Bundle 'vim-scripts/dbext.vim.git'
  Bundle 'vim-scripts/Superior-Haskell-Interaction-Mode-SHIM.git'
  Bundle 'elzr/vim-json.git'
+ Bundle 'lukaszb/vim-web-indent.git'
+ Bundle 'vim-scripts/taglist.vim.git'
+ Bundle 'Shutnik/jshint2.vim'
+ Bundle "pangloss/vim-javascript"
+ Bundle "nathanaelkane/vim-indent-guides"
+ Bundle "Raimondi/delimitMate"
 
  filetype plugin indent on     " required!
+ au FileType javascript setl sw=2 sts=2 et
  "
  " Brief help
  " :BundleList          - list configured bundles
