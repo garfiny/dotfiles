@@ -12,13 +12,24 @@ alias l='ls -aG'
 alias ll='ls -alG'
 alias be='bundle exec'
 
+#Docker
+if [ `boot2docker status` == 'running' ]; then
+    export DOCKER_HOST=tcp://$(boot2docker ip 2>/dev/null):2375
+fi
+
+
 #RVM initializer
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+RUBIES+=(~/.rvm/rubies/*)
 
 #RBENV initializer
 eval "$(rbenv init -)"
 
-[[ $TERM != "screen" ]] && `tmux -2`
+#chruby here
+source /usr/local/opt/chruby/share/chruby/chruby.sh
+source ~/.rvm/scripts/extras/chruby.sh
+source /usr/local/opt/chruby/share/chruby/auto.sh
 
+[[ $TERM != "screen" ]] && `tmux -2`
 
 set -o ignoreeof
