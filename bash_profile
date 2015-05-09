@@ -35,3 +35,5 @@ eval "$(rbenv init -)"
 [[ $TERM != "screen" ]] && `tmux -2`
 
 set -o ignoreeof
+
+[ -n "$TMUX" ] && export TERM=screen-256color
