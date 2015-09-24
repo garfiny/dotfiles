@@ -19,7 +19,7 @@ set rtp+=~/.vim/bundle/vundle/
  Bundle 'L9'
  Bundle 'FuzzyFinder'
  " non github repos
- Bundle 'git://git.wincent.com/command-t.git'
+"  Bundle 'git://git.wincent.com/command-t.git'
 
  " Customized bundles
  Bundle 'vim-ruby/vim-ruby'
@@ -53,6 +53,7 @@ set rtp+=~/.vim/bundle/vundle/
  Bundle 'vinhtiensinh/clipboard_file_open.git'
  Bundle 'vim-scripts/dbext.vim.git'
  Bundle 'vim-scripts/Superior-Haskell-Interaction-Mode-SHIM.git'
+ Bundle 'vim-scripts/TaskList.vim'
  Bundle 'elzr/vim-json.git'
  Bundle 'lukaszb/vim-web-indent.git'
  Bundle 'vim-scripts/taglist.vim.git'
