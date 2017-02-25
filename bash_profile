@@ -3,22 +3,26 @@ export EDITOR="vim"
 # export PATH="$HOME/opt/homebrew/bin:$PATH"
 # export PATH="$HOME/Library/Haskell/bin:$PATH"
 # export PATH="$HOME/.rbenv/bin:$PATH"
-# export JAVA_HOME=`/usr/libexec/java_home -v 1.7`
 
-# export JRUBY_OPTS=---2.0
+export NVM_DIR="$HOME/.nvm"
+export JAVA_HOME=`/usr/libexec/java_home`
+
+# export M2_HOME="/Users/shuo.zhao/opt/apache-maven-3.3.3"
+# export PATH="$M2_HOME/bin:$PATH"
+# export MAVEN_OPTS="-Xmx2g -XX:MaxPermSize=512M -XX:ReservedCodeCacheSize=512m"
+#
+# export SPARK_HOME="/Users/shuo.zhao/opt/spark"
+# export PATH="$SPARK_HOME/bin:$PATH"
+#
+# export GRADLE_HOME="~/opt/gradle-3.3"
+# export PATH="$PATH:~/opt/gradle-3.3/bin"
+
+export PATH="/usr/local/sbin:/Users/shuo.zhao/opt/scala/bin:$PATH"
 
 alias ls='ls -G'
 alias l='ls -aG'
 alias ll='ls -alG'
 alias be='bundle exec'
-
-#Docker
-if [ `boot2docker status` == 'running' ]; then
-    export DOCKER_HOST=tcp://$(boot2docker ip 2>/dev/null):2375
-    export DOCKER_CERT_PATH=~/.boot2docker/certs/boot2docker-vm
-    export DOCKER_TLS_VERIFY=1
-fi
-
 
 #RVM initializer
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
