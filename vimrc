@@ -59,7 +59,6 @@ Bundle "pangloss/vim-javascript"
 Bundle "nathanaelkane/vim-indent-guides"
 Bundle "Raimondi/delimitMate"
 Bundle 'derekwyatt/vim-scala'
-Bundle 'powerline/powerline'
 
 filetype plugin indent on     " required!
 au FileType javascript setl sw=2 sts=2 et
@@ -84,6 +83,16 @@ set t_Co=256
 set background=dark
 call togglebg#map("<F5>")
 colorscheme wombat256
+
+" pwoerline
+" need python2 enabled
+set rtp+=/usr/local/lib/python2.7/site-packages/powerline/bindings/vim
+if has("gui_running")
+    let s:uname = system("uname")
+    if s:uname == "Darwin\n"
+        set guifont=Meslo\ LG\ S\ for\ Powerline
+    endif
+endif
 
 " MRU
 let MRU_Exclude_Files = '^/tmp/.*\|^/var/tmp/.*'
