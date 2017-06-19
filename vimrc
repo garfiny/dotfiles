@@ -28,7 +28,6 @@ Bundle 'docunext/closetag.vim.git'
 Bundle 'altercation/vim-colors-solarized.git'
 Bundle 'majutsushi/tagbar.git'
 Bundle 'ervandew/supertab.git'
-Bundle 'msanders/snipmate.vim.git'
 Bundle 'tpope/vim-surround.git'
 Bundle 'tpope/vim-repeat.git'
 Bundle 'tpope/vim-speeddating.git'
@@ -59,6 +58,9 @@ Bundle "pangloss/vim-javascript"
 Bundle "nathanaelkane/vim-indent-guides"
 Bundle "Raimondi/delimitMate"
 Bundle 'derekwyatt/vim-scala'
+Plugin 'tomtom/tlib_vim'
+Plugin 'garbas/vim-snipmate'
+Plugin 'honza/vim-snippets'
 
 filetype plugin indent on     " required!
 au FileType javascript setl sw=2 sts=2 et
@@ -158,6 +160,8 @@ let g:pymode_syntax_space_errors = g:pymode_syntax_all
 
 " Don't autofold code
 let g:pymode_folding = 0
+
+let g:vim_json_syntax_conceal = 0
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Basic Settings
