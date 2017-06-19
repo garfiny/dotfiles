@@ -5,6 +5,8 @@ export EDITOR="vim"
 # export PATH="$HOME/.rbenv/bin:$PATH"
 
 export NVM_DIR="$HOME/.nvm"
+source $(brew --prefix nvm)/nvm.sh
+
 export JAVA_HOME=`/usr/libexec/java_home`
 
 # export M2_HOME="/Users/shuo.zhao/opt/apache-maven-3.3.3"
